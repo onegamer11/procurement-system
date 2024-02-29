@@ -32,7 +32,7 @@ export default function SupplierOrderList() {
 		dispatch(supplierlistOrders());
 	}, [dispatch, history, supplierInfo]);
 
-	if (supplierInfo) {
+	// if (supplierInfo) {
 		return (
 			<div style={{ minHeight: 700, backgroundColor: "#f0f0f0" }} className="orders">
 				<br></br>
@@ -200,12 +200,12 @@ export default function SupplierOrderList() {
 				</MainScreen>
 			</div>
 		);
-	} else {
-		return (
-			<div className="denied">
-				<MainScreen />
-				<br></br>
-			</div>
-		);
-	}
+	// } else {
+	// 	return (
+	// 		<div className="denied">
+	// 			<MainScreen />
+	// 			<br></br>
+	// 		</div>
+	// 	);
+	// }
 }

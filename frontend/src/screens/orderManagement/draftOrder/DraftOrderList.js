@@ -9,6 +9,8 @@ import ErrorMessage from "../../../components/ErrorMessage";
 import swal from "sweetalert";
 import { useState } from "react";
 import MainScreen from "../../../components/MainScreen";
+
+
 export default function DraftOrderList() {
 	// get the site manager login state
 	const dispatch = useDispatch();
@@ -67,7 +69,7 @@ export default function DraftOrderList() {
 		dispatch(listDraftOrders());
 	}, [dispatch, history, siteManagerInfo, successDelete]);
 
-	if (siteManagerInfo) {
+	// if (siteManagerInfo) {
 		return (
 			<div style={{ backgroundColor: "#f0f0f0" }}>
 				<MainScreen title="Draft Order List">
@@ -247,12 +249,12 @@ export default function DraftOrderList() {
 				</MainScreen>
 			</div>
 		);
-	} else {
-		return (
-			<div className="denied">
-				<MainScreen />
-				<br></br>
-			</div>
-		);
-	}
+	// } else {
+	// 	return (
+	// 		<div className="denied">
+	// 			<MainScreen />
+	// 			<br></br>
+	// 		</div>
+	// 	);
+	// }
 }

@@ -48,13 +48,20 @@ function Header({ setSearch }) {
 
                     <Link to="/site-manager-register">
           <Button
-            style={{
-              padding: '8px',
-              fontSize: '15px',
-              // ... Other styles
-            }}
-            variant="primary"
-            className="logoutBtn"
+           style={{
+            padding: "8px",
+            fontSize: "15px",
+            fontFamily: `"Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+                Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"`,
+            width: "150px",
+            backgroundColor: "transparent",
+            borderRadius: 0,
+            border: "1px solid white",
+            color: "white",
+            fontWeight: 700,
+        }}
+        variant="primary"
+        className="logoutBtn"
           >
             Register
           </Button>
@@ -154,7 +161,7 @@ function Header({ setSearch }) {
 						</Button>
 					</Link>
 				) : (
-                    <Link to="/site-manger-register">Register</Link>
+                    <Link to="/site-manger-register"></Link>
 				)}
 			</div>
 			<br />

@@ -12,7 +12,10 @@ const bcrypt = require("bcryptjs");
  * This method is implemented to
  * register a site manager to the system
  */
-const registerSiteManager = asyncHandler(async (req, res) => {
+ const registerSiteManager = asyncHandler(async (req, res) => {
+  
+    try {
+
 	const { siteManagerId, name, dob, nic, gender, telephone, address, email, password, pic, experience } = req.body;
 
 	const siteManagerExists = await SiteManager.findOne({ nic });
@@ -22,7 +25,7 @@ const registerSiteManager = asyncHandler(async (req, res) => {
 	}
 
 	const siteManager = new SiteManager({
-		siteManagerId,
+		siteManagerId, 
 		name,
 		dob,
 		nic,
@@ -60,6 +63,11 @@ const registerSiteManager = asyncHandler(async (req, res) => {
 		res.status(400);
 		throw new Error("Site Manager Registration Failed !");
 	}
+
+} catch(error) {
+    console.error('Error during registration:', error);
+    res.status(500).json({ message: 'Internal server error during registration' });
+}
 });
 
 /**

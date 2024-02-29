@@ -14,7 +14,7 @@ const SupplierDashboard = ({ history }) => {
 		history.push("/");
 	};
 
-	if (supplierInfo) {
+	// if (supplierInfo) {
 		return (
 			<div className="supplierBackground">
 				<br></br>
@@ -102,14 +102,14 @@ const SupplierDashboard = ({ history }) => {
 				<br></br>
 			</div>
 		);
-	} else {
-		return (
-			<div className="denied">
-				<MainScreen />
-				<br></br>
-			</div>
-		);
-	}
+	// } else {
+	// 	return (
+	// 		<div className="denied">
+	// 			<MainScreen />
+	// 			<br></br>
+	// 		</div>
+	// 	);
+	// }
 };
 
 export default SupplierDashboard;

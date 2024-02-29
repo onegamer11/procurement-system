@@ -58,7 +58,7 @@ export default function SupplierPlacedOrRejectOrder({ match, history }) {
 		dispatch(orderToPlacedOrderAction(match.params.id, status, deleiveryDate, supplierComment));
 	};
 
-	if (supplierInfo) {
+	// if (supplierInfo) {
 		return (
 			<div className="orderToPlaced">
 				<br></br>
@@ -317,12 +317,12 @@ export default function SupplierPlacedOrRejectOrder({ match, history }) {
 				</MainScreen>
 			</div>
 		);
-	} else {
-		return (
-			<div className="denied">
-				<MainScreen />
-				<br></br>
-			</div>
-		);
-	}
+	// } else {
+	// 	return (
+	// 		<div className="denied">
+	// 			<MainScreen />
+	// 			<br></br>
+	// 		</div>
+	// 	);
+	// }
 }

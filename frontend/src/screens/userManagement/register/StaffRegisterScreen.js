@@ -91,7 +91,7 @@ const StaffRegisterScreen = () => {
 				method: "post",
 				body: data,
 			})
-				.then((res) => res.json())
+				.then((res) => console.log('resssssssssssss',res))
 				.then((data) => {
 					setPic(data.url.toString());
 				})
@@ -103,7 +103,7 @@ const StaffRegisterScreen = () => {
 		}
 	};
 	//check staff access permission
-	if (staffInfo) {
+	// if (staffInfo) {
 		//render screen
 		return (
 			<div className="registerBg">
@@ -339,14 +339,16 @@ const StaffRegisterScreen = () => {
 				<br></br>
 			</div>
 		);
-	} else {
-		return (
-			<div className="denied">
-				<MainScreen />
-				<br></br>
-			</div>
-		);
-	}
+	// } 
+    
+    // else {
+	// 	return (
+	// 		<div className="denied">
+	// 			<MainScreen />
+	// 			<br></br>
+	// 		</div>
+	// 	);
+	// }
 };
 
 export default StaffRegisterScreen;

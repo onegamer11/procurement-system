@@ -45,7 +45,7 @@ export default function CreateDraftOrder({ history }) {
 	};
 
 	useEffect(() => {}, []);
-	if (siteManagerInfo) {
+	// if (siteManagerInfo) {
 		return (
 			<div
 				className="draftOrderCreate"
@@ -178,12 +178,12 @@ export default function CreateDraftOrder({ history }) {
 				</MainScreen>
 			</div>
 		);
-	} else {
-		return (
-			<div className="denied">
-				<MainScreen />
-				<br></br>
-			</div>
-		);
-	}
+	// } else {
+	// 	return (
+	// 		<div className="denied">
+	// 			<MainScreen />
+	// 			<br></br>
+	// 		</div>
+	// 	);
+	// }
 }

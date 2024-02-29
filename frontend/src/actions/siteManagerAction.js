@@ -119,7 +119,7 @@ export const siteManagerRegister =
 			});
 
 			setTimeout(function () {
-				window.location.href = "/staff";
+				window.location.href = "/siteManager-login";
 			}, 2000);
 		} catch (error) {
 			dispatch({

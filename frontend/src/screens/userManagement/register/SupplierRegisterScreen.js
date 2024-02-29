@@ -119,7 +119,7 @@ const SupplierRegisterScreen = () => {
 	};
 
 	//check staff access permission
-	if (staffInfo) {
+	// if (staffInfo) {
 		//render screen
 		return (
 			<div className="registerBg">
@@ -367,14 +367,14 @@ const SupplierRegisterScreen = () => {
 				<br></br>
 			</div>
 		);
-	} else {
-		return (
-			<div className="denied">
-				<MainScreen />
-				<br></br>
-			</div>
-		);
-	}
+	// } else {
+	// 	return (
+	// 		<div className="denied">
+	// 			<MainScreen />
+	// 			<br></br>
+	// 		</div>
+	// 	);
+	// }
 };
 
 export default SupplierRegisterScreen;

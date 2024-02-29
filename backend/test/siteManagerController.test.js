@@ -5,7 +5,7 @@ describe("Testing the site manager routes", () => {
 	it("Create site manager", async () => {
 		const returnedSiteManager = registerSiteManager({
 			siteManagerId: "SM002",
-			name: "Chathurika",
+			name: "Anoosha",
 			dob: "2022-12-12",
 			nic: "997193245V",
 			gender: "female",
@@ -17,7 +17,7 @@ describe("Testing the site manager routes", () => {
 			experience: "2 years",
 		});
 		const siteManager = {
-			name: "Chathurika",
+			name: "Anoosha",
 		};
 		expect(returnedSiteManager.name).to.equal(siteManager.name);
 	});

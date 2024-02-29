@@ -14,7 +14,7 @@ const StaffDashboard = ({ history }) => {
 		history.push("/");
 	};
 
-	if (staffInfo) {
+	// if (staffInfo) {
 		return (
 			<div className="staffBackground">
 				<br></br>
@@ -222,14 +222,14 @@ const StaffDashboard = ({ history }) => {
 				<br></br>
 			</div>
 		);
-	} else {
-		return (
-			<div className="denied">
-				<MainScreen />
-				<br></br>
-			</div>
-		);
-	}
+	// } else {
+	// 	return (
+	// 		<div className="denied">
+	// 			<MainScreen />
+	// 			<br></br>
+	// 		</div>
+	// 	);
+	// }
 };
 
 export default StaffDashboard;

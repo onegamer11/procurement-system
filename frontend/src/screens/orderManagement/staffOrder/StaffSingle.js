@@ -92,7 +92,7 @@ export default function StaffSingle({ match, history }) {
 		}
 	};
 
-	if (staffInfo) {
+	// if (staffInfo) {
 		return (
 			<div className="singleOrder">
 				<br></br>
@@ -304,12 +304,12 @@ export default function StaffSingle({ match, history }) {
 				</MainScreen>
 			</div>
 		);
-	} else {
-		return (
-			<div className="denied">
-				<MainScreen />
-				<br></br>
-			</div>
-		);
-	}
+	// } else {
+	// 	return (
+	// 		<div className="denied">
+	// 			<MainScreen />
+	// 			<br></br>
+	// 		</div>
+	// 	);
+	// }
 }

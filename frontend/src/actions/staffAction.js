@@ -124,7 +124,7 @@ export const staffRegister =
 			});
 
 			setTimeout(function () {
-				window.location.href = "/staff";
+				window.location.href = "/staff-login";
 			}, 2000);
 		} catch (error) {
 			dispatch({

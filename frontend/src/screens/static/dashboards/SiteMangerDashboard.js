@@ -14,7 +14,7 @@ const SiteManagerDashboard = ({ history }) => {
 		history.push("/");
 	};
 
-	if (siteManagerInfo) {
+	// if (siteManagerInfo) {
 		return (
 			<div className="siteManagerBackground">
 				<br></br>
@@ -122,14 +122,14 @@ const SiteManagerDashboard = ({ history }) => {
 				<br></br>
 			</div>
 		);
-	} else {
-		return (
-			<div className="denied">
-				<MainScreen />
-				<br></br>
-			</div>
-		);
-	}
+	// } else {
+	// 	return (
+	// 		<div className="denied">
+	// 			<MainScreen />
+	// 			<br></br>
+	// 		</div>
+	// 	);
+	// }
 };
 
 export default SiteManagerDashboard;

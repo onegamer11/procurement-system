@@ -55,7 +55,7 @@ export default function StaffOrderApprove({ match, history }) {
 		dispatch(StaffOrderToApproveOrderAction(match.params.id, status));
 		if (!status) return;
 	};
-	if (staffInfo) {
+	// if (staffInfo) {
 		return (
 			<div className="orderToApprove">
 				<br></br>
@@ -295,12 +295,12 @@ export default function StaffOrderApprove({ match, history }) {
 				</MainScreen>
 			</div>
 		);
-	} else {
-		return (
-			<div className="denied">
-				<MainScreen />
-				<br></br>
-			</div>
-		);
-	}
+	// } else {
+	// 	return (
+	// 		<div className="denied">
+	// 			<MainScreen />
+	// 			<br></br>
+	// 		</div>
+	// 	);
+	// }
 }

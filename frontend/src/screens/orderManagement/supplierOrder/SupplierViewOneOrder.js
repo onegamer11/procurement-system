@@ -43,7 +43,7 @@ export default function SupplierViewOneOrder({ match, history }) {
 		fetching();
 	}, [match.params.id]);
 
-	if (supplierInfo) {
+	// if (supplierInfo) {
 		return (
 			<div className="supplierOneOrder">
 				<br></br>
@@ -276,12 +276,12 @@ export default function SupplierViewOneOrder({ match, history }) {
 				</MainScreen>
 			</div>
 		);
-	} else {
-		return (
-			<div className="denied">
-				<MainScreen />
-				<br></br>
-			</div>
-		);
-	}
+	// } else {
+	// 	return (
+	// 		<div className="denied">
+	// 			<MainScreen />
+	// 			<br></br>
+	// 		</div>
+	// 	);
+	// }
 }

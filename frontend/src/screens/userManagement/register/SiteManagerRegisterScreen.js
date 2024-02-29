@@ -78,6 +78,7 @@ const SiteManagerRegisterScreen = () => {
 
 	//post picture details
 	const postDetails = (pics) => {
+        console.log('picsssss',pics)
 		if (pics === "https://icon-library.com/images/anonymous-avatar-icon/anonymous-avatar-icon-25.jpg") {
 			return setPicMessage("Please Select an Image");
 		}
@@ -103,9 +104,12 @@ const SiteManagerRegisterScreen = () => {
 		}
 	};
 
+
+
+
     console.log("staffInfo:", staffInfo);
 	//check staff access permission
-	if (staffInfo ) {
+	// if (staffInfo ) {
 		//render screen
 		return (
 			<div className="registerBg">
@@ -279,6 +283,7 @@ const SiteManagerRegisterScreen = () => {
 												borderRadius: 0,
 												border: "3px solid white",
 											}}
+                                            onClick={postDetails}
 										>
 											Register
 										</Button>
@@ -342,14 +347,14 @@ const SiteManagerRegisterScreen = () => {
 				<br></br>
 			</div>
 		);
-	} else {
-		return (
-			<div className="denied">
-				<MainScreen />
-				<br></br>
-			</div> 
-		);
-	}
+	// } else {
+	// 	return (
+	// 		<div className="denied">
+	// 			<MainScreen />
+	// 			<br></br>
+	// 		</div> 
+	// 	);
+	// }
 };
 
 export default SiteManagerRegisterScreen;

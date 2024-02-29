@@ -32,7 +32,7 @@ export default function InvoiceList() {
 		dispatch(listInvoice());
 	}, [dispatch, history, staffInfo]);
 
-	if (staffInfo) {
+	// if (staffInfo) {
 		return (
 			<div style={{ minHeight: 700, backgroundColor: "#f0f0f0" }} className="orders">
 				<br></br>
@@ -197,12 +197,12 @@ export default function InvoiceList() {
 				</MainScreen>
 			</div>
 		);
-	} else {
-		return (
-			<div className="denied">
-				<MainScreen />
-				<br></br>
-			</div>
-		);
-	}
+	// } else {
+	// 	return (
+	// 		<div className="denied">
+	// 			<MainScreen />
+	// 			<br></br>
+	// 		</div>
+	// 	);
+	// }
 }

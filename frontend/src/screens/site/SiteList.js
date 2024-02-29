@@ -70,7 +70,7 @@ export default function SiteList() {
 	useEffect(() => {
 		dispatch(listsiteAction());
 	}, [dispatch, staffInfo, successUpdate, successDelete, history]);
-	if (staffInfo) {
+	// if (staffInfo) {
 		return (
 			<div className="SiteBackgroundView">
 				<MainScreen title="Site List">
@@ -267,14 +267,14 @@ export default function SiteList() {
 				</MainScreen>
 			</div>
 		);
-	} else {
-		return (
-			<div className="denied">
-				<MainScreen />
-				<br></br>
-			</div>
-		);
-	}
+	// } else {
+	// 	return (
+	// 		<div className="denied">
+	// 			<MainScreen />
+	// 			<br></br>
+	// 		</div>
+	// 	);
+	// }
 }
 
 // href={`/site-management/${siteManagements._id}`}
